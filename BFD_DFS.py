@@ -38,7 +38,6 @@ def cycles(g,destination):                     #le graphe possède t'il un cycle
     Q=deque();   							#liste des sommets visités  . 
     Q.append(destination);
     desti_final=destination;
-    print(destination,"cc")
     destination=-1;
     while(cycle==False and len(Q)!=0):
         v=Q.pop();
@@ -49,9 +48,6 @@ def cycles(g,destination):                     #le graphe possède t'il un cycle
                 break;
             else:
                 Q.append(w);
-                
-                
-    print("cc",destination);
     if (destination==desti_final):
         cycle=True;
     return cycle;
